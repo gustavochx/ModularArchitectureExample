@@ -7,161 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BD8684C261E4F3800DC1A7F /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD8684A261E4F3800DC1A7F /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BD8687F261E555F00DC1A7F /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8687E261E555F00DC1A7F /* HttpRequest.swift */; };
-		2BD86882261E55B600DC1A7F /* HttpRequestSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86881261E55B600DC1A7F /* HttpRequestSetup.swift */; };
-		2BD86885261E56B500DC1A7F /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86884261E56B500DC1A7F /* RequestError.swift */; };
-		2BD8688D261E5C6500DC1A7F /* CurrencyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8688C261E5C6500DC1A7F /* CurrencyEnum.swift */; };
-		2BD86890261E5C8600DC1A7F /* CurrenciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8688F261E5C8600DC1A7F /* CurrenciesResponse.swift */; };
-		2BD86893261E5CC400DC1A7F /* CriptoCurrencyHistoricalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86892261E5CC400DC1A7F /* CriptoCurrencyHistoricalResponse.swift */; };
-		2BD86896261E5CEA00DC1A7F /* TodayCryptoCurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86895261E5CEA00DC1A7F /* TodayCryptoCurrencyResponse.swift */; };
-		AFFF7B6DD93CDD74EBDF6A25 /* Pods_Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCDB59DBC3C959B5F6B2DE /* Pods_Service.framework */; };
+		2BD868A7261E5D2D00DC1A7F /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD868A5261E5D2D00DC1A7F /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C3A5F32F10A7E6B23960362 /* Pods_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998EC4482B3CC5AE8FA3D293 /* Pods_Core.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2BD86847261E4F3800DC1A7F /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BD8684A261E4F3800DC1A7F /* Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
-		2BD8684B261E4F3800DC1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BD8687E261E555F00DC1A7F /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
-		2BD86881261E55B600DC1A7F /* HttpRequestSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestSetup.swift; sourceTree = "<group>"; };
-		2BD86884261E56B500DC1A7F /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
-		2BD8688C261E5C6500DC1A7F /* CurrencyEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyEnum.swift; sourceTree = "<group>"; };
-		2BD8688F261E5C8600DC1A7F /* CurrenciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesResponse.swift; sourceTree = "<group>"; };
-		2BD86892261E5CC400DC1A7F /* CriptoCurrencyHistoricalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCurrencyHistoricalResponse.swift; sourceTree = "<group>"; };
-		2BD86895261E5CEA00DC1A7F /* TodayCryptoCurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCryptoCurrencyResponse.swift; sourceTree = "<group>"; };
-		34E8547FBFA219A425E09AA4 /* Pods-Service.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service.debug.xcconfig"; path = "Target Support Files/Pods-Service/Pods-Service.debug.xcconfig"; sourceTree = "<group>"; };
-		B3CCDB59DBC3C959B5F6B2DE /* Pods_Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5D3D157A9B69453A20FC619 /* Pods-Service.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service.release.xcconfig"; path = "Target Support Files/Pods-Service/Pods-Service.release.xcconfig"; sourceTree = "<group>"; };
+		2BD868A2261E5D2D00DC1A7F /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD868A5261E5D2D00DC1A7F /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		2BD868A6261E5D2D00DC1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4493892EE654C8B2CAFBACA7 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
+		92533F62E60FD339C4BBE916 /* Pods-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.debug.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.debug.xcconfig"; sourceTree = "<group>"; };
+		998EC4482B3CC5AE8FA3D293 /* Pods_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2BD86844261E4F3800DC1A7F /* Frameworks */ = {
+		2BD8689F261E5D2D00DC1A7F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFFF7B6DD93CDD74EBDF6A25 /* Pods_Service.framework in Frameworks */,
+				9C3A5F32F10A7E6B23960362 /* Pods_Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		096C8C23C4CA1F936477643A /* Frameworks */ = {
+		2BD86898261E5D2D00DC1A7F = {
 			isa = PBXGroup;
 			children = (
-				B3CCDB59DBC3C959B5F6B2DE /* Pods_Service.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2BD8683D261E4F3800DC1A7F = {
-			isa = PBXGroup;
-			children = (
-				2BD86849261E4F3800DC1A7F /* Service */,
-				2BD86848261E4F3800DC1A7F /* Products */,
-				7A0095A8F51AAD93563E9C1E /* Pods */,
-				096C8C23C4CA1F936477643A /* Frameworks */,
+				2BD868A4261E5D2D00DC1A7F /* Core */,
+				2BD868A3261E5D2D00DC1A7F /* Products */,
+				D6133AA2B09E5DE3C4C70C05 /* Pods */,
+				DE94E63CE3417DD3761223E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2BD86848261E4F3800DC1A7F /* Products */ = {
+		2BD868A3261E5D2D00DC1A7F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BD86847261E4F3800DC1A7F /* Service.framework */,
+				2BD868A2261E5D2D00DC1A7F /* Core.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2BD86849261E4F3800DC1A7F /* Service */ = {
+		2BD868A4261E5D2D00DC1A7F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				2BD8688B261E5C3A00DC1A7F /* DTO */,
-				2BD86862261E50A700DC1A7F /* Connection */,
-				2BD8684A261E4F3800DC1A7F /* Service.h */,
-				2BD8684B261E4F3800DC1A7F /* Info.plist */,
+				2BD868A5261E5D2D00DC1A7F /* Core.h */,
+				2BD868A6261E5D2D00DC1A7F /* Info.plist */,
 			);
-			path = Service;
+			path = Core;
 			sourceTree = "<group>";
 		};
-		2BD86862261E50A700DC1A7F /* Connection */ = {
+		D6133AA2B09E5DE3C4C70C05 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2BD8687E261E555F00DC1A7F /* HttpRequest.swift */,
-				2BD86881261E55B600DC1A7F /* HttpRequestSetup.swift */,
-				2BD86884261E56B500DC1A7F /* RequestError.swift */,
-			);
-			path = Connection;
-			sourceTree = "<group>";
-		};
-		2BD8688B261E5C3A00DC1A7F /* DTO */ = {
-			isa = PBXGroup;
-			children = (
-				2BD8688C261E5C6500DC1A7F /* CurrencyEnum.swift */,
-				2BD8688F261E5C8600DC1A7F /* CurrenciesResponse.swift */,
-				2BD86892261E5CC400DC1A7F /* CriptoCurrencyHistoricalResponse.swift */,
-				2BD86895261E5CEA00DC1A7F /* TodayCryptoCurrencyResponse.swift */,
-			);
-			path = DTO;
-			sourceTree = "<group>";
-		};
-		7A0095A8F51AAD93563E9C1E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				34E8547FBFA219A425E09AA4 /* Pods-Service.debug.xcconfig */,
-				C5D3D157A9B69453A20FC619 /* Pods-Service.release.xcconfig */,
+				92533F62E60FD339C4BBE916 /* Pods-Core.debug.xcconfig */,
+				4493892EE654C8B2CAFBACA7 /* Pods-Core.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		DE94E63CE3417DD3761223E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				998EC4482B3CC5AE8FA3D293 /* Pods_Core.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2BD86842261E4F3800DC1A7F /* Headers */ = {
+		2BD8689D261E5D2D00DC1A7F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD8684C261E4F3800DC1A7F /* Service.h in Headers */,
+				2BD868A7261E5D2D00DC1A7F /* Core.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2BD86846261E4F3800DC1A7F /* Service */ = {
+		2BD868A1261E5D2D00DC1A7F /* Core */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BD8684F261E4F3800DC1A7F /* Build configuration list for PBXNativeTarget "Service" */;
+			buildConfigurationList = 2BD868AA261E5D2D00DC1A7F /* Build configuration list for PBXNativeTarget "Core" */;
 			buildPhases = (
-				8A3B19028FB25D68DF0AC3C3 /* [CP] Check Pods Manifest.lock */,
-				2BD86842261E4F3800DC1A7F /* Headers */,
-				2BD86843261E4F3800DC1A7F /* Sources */,
-				2BD86844261E4F3800DC1A7F /* Frameworks */,
-				2BD86845261E4F3800DC1A7F /* Resources */,
+				7A06DCA0C8E305B597C10B4A /* [CP] Check Pods Manifest.lock */,
+				2BD8689D261E5D2D00DC1A7F /* Headers */,
+				2BD8689E261E5D2D00DC1A7F /* Sources */,
+				2BD8689F261E5D2D00DC1A7F /* Frameworks */,
+				2BD868A0261E5D2D00DC1A7F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Service;
-			productName = Service;
-			productReference = 2BD86847261E4F3800DC1A7F /* Service.framework */;
+			name = Core;
+			productName = Core;
+			productReference = 2BD868A2261E5D2D00DC1A7F /* Core.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2BD8683E261E4F3800DC1A7F /* Project object */ = {
+		2BD86899261E5D2D00DC1A7F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					2BD86846261E4F3800DC1A7F = {
+					2BD868A1261E5D2D00DC1A7F = {
 						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1240;
 					};
 				};
 			};
-			buildConfigurationList = 2BD86841261E4F3800DC1A7F /* Build configuration list for PBXProject "Service" */;
+			buildConfigurationList = 2BD8689C261E5D2D00DC1A7F /* Build configuration list for PBXProject "Core" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,18 +131,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 2BD8683D261E4F3800DC1A7F;
-			productRefGroup = 2BD86848261E4F3800DC1A7F /* Products */;
+			mainGroup = 2BD86898261E5D2D00DC1A7F;
+			productRefGroup = 2BD868A3261E5D2D00DC1A7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BD86846261E4F3800DC1A7F /* Service */,
+				2BD868A1261E5D2D00DC1A7F /* Core */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2BD86845261E4F3800DC1A7F /* Resources */ = {
+		2BD868A0261E5D2D00DC1A7F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,7 +152,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8A3B19028FB25D68DF0AC3C3 /* [CP] Check Pods Manifest.lock */ = {
+		7A06DCA0C8E305B597C10B4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,7 +167,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Service-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Core-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -215,24 +177,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2BD86843261E4F3800DC1A7F /* Sources */ = {
+		2BD8689E261E5D2D00DC1A7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD8687F261E555F00DC1A7F /* HttpRequest.swift in Sources */,
-				2BD8688D261E5C6500DC1A7F /* CurrencyEnum.swift in Sources */,
-				2BD86893261E5CC400DC1A7F /* CriptoCurrencyHistoricalResponse.swift in Sources */,
-				2BD86882261E55B600DC1A7F /* HttpRequestSetup.swift in Sources */,
-				2BD86890261E5C8600DC1A7F /* CurrenciesResponse.swift in Sources */,
-				2BD86896261E5CEA00DC1A7F /* TodayCryptoCurrencyResponse.swift in Sources */,
-				2BD86885261E56B500DC1A7F /* RequestError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2BD8684D261E4F3800DC1A7F /* Debug */ = {
+		2BD868A8261E5D2D00DC1A7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,7 +251,7 @@
 			};
 			name = Debug;
 		};
-		2BD8684E261E4F3800DC1A7F /* Release */ = {
+		2BD868A9261E5D2D00DC1A7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -354,50 +309,47 @@
 			};
 			name = Release;
 		};
-		2BD86850261E4F3800DC1A7F /* Debug */ = {
+		2BD868AB261E5D2D00DC1A7F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34E8547FBFA219A425E09AA4 /* Pods-Service.debug.xcconfig */;
+			baseConfigurationReference = 92533F62E60FD339C4BBE916 /* Pods-Core.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Service/Info.plist;
+				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.example.Service;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.example.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2BD86851261E4F3800DC1A7F /* Release */ = {
+		2BD868AC261E5D2D00DC1A7F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5D3D157A9B69453A20FC619 /* Pods-Service.release.xcconfig */;
+			baseConfigurationReference = 4493892EE654C8B2CAFBACA7 /* Pods-Core.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Service/Info.plist;
+				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.example.Service;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.example.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -408,25 +360,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2BD86841261E4F3800DC1A7F /* Build configuration list for PBXProject "Service" */ = {
+		2BD8689C261E5D2D00DC1A7F /* Build configuration list for PBXProject "Core" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BD8684D261E4F3800DC1A7F /* Debug */,
-				2BD8684E261E4F3800DC1A7F /* Release */,
+				2BD868A8261E5D2D00DC1A7F /* Debug */,
+				2BD868A9261E5D2D00DC1A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BD8684F261E4F3800DC1A7F /* Build configuration list for PBXNativeTarget "Service" */ = {
+		2BD868AA261E5D2D00DC1A7F /* Build configuration list for PBXNativeTarget "Core" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BD86850261E4F3800DC1A7F /* Debug */,
-				2BD86851261E4F3800DC1A7F /* Release */,
+				2BD868AB261E5D2D00DC1A7F /* Debug */,
+				2BD868AC261E5D2D00DC1A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2BD8683E261E4F3800DC1A7F /* Project object */;
+	rootObject = 2BD86899261E5D2D00DC1A7F /* Project object */;
 }

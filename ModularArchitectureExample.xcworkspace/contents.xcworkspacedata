@@ -8,6 +8,12 @@
       location = "group:Service/Service.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Components/Components.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

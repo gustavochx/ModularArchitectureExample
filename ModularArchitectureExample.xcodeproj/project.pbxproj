@@ -13,35 +13,10 @@
 		2BD8682D261E4EDB00DC1A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD8682B261E4EDB00DC1A7F /* Main.storyboard */; };
 		2BD8682F261E4EDC00DC1A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD8682E261E4EDC00DC1A7F /* Assets.xcassets */; };
 		2BD86832261E4EDC00DC1A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD86830261E4EDC00DC1A7F /* LaunchScreen.storyboard */; };
-		2BD8686C261E50E200DC1A7F /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD8686A261E50E200DC1A7F /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BD8686F261E50E200DC1A7F /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD86868261E50E200DC1A7F /* Domain.framework */; };
-		2BD86870261E50E200DC1A7F /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD86868261E50E200DC1A7F /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BD86924261E790400DC1A7F /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD86922261E790400DC1A7F /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BD86933261E791500DC1A7F /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD86931261E791500DC1A7F /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		812E7CC279E241F8451481FA /* Pods_ModularArchitectureExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312965F905E255BA400AD672 /* Pods_ModularArchitectureExample.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2BD8686D261E50E200DC1A7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BD8681A261E4EDB00DC1A7F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2BD86867261E50E200DC1A7F;
-			remoteInfo = Domain;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2BD86871261E50E200DC1A7F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2BD86870261E50E200DC1A7F /* Domain.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2BD86822261E4EDB00DC1A7F /* ModularArchitectureExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularArchitectureExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,9 +27,12 @@
 		2BD8682E261E4EDC00DC1A7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BD86831261E4EDC00DC1A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BD86833261E4EDC00DC1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BD86868261E50E200DC1A7F /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BD8686A261E50E200DC1A7F /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
-		2BD8686B261E50E200DC1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BD86920261E790400DC1A7F /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD86922261E790400DC1A7F /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		2BD86923261E790400DC1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BD8692F261E791500DC1A7F /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD86931261E791500DC1A7F /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		2BD86932261E791500DC1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		312965F905E255BA400AD672 /* Pods_ModularArchitectureExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModularArchitectureExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		872B07AD0A7341A93C8A77AF /* Pods-ModularArchitectureExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModularArchitectureExample.release.xcconfig"; path = "Target Support Files/Pods-ModularArchitectureExample/Pods-ModularArchitectureExample.release.xcconfig"; sourceTree = "<group>"; };
 		E8163364F08B49F31E19E917 /* Pods-ModularArchitectureExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModularArchitectureExample.debug.xcconfig"; path = "Target Support Files/Pods-ModularArchitectureExample/Pods-ModularArchitectureExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,12 +43,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD8686F261E50E200DC1A7F /* Domain.framework in Frameworks */,
 				812E7CC279E241F8451481FA /* Pods_ModularArchitectureExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BD86865261E50E200DC1A7F /* Frameworks */ = {
+		2BD8691D261E790400DC1A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD8692C261E791500DC1A7F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,7 +67,8 @@
 		2BD86819261E4EDB00DC1A7F = {
 			isa = PBXGroup;
 			children = (
-				2BD86869261E50E200DC1A7F /* Domain */,
+				2BD86930261E791500DC1A7F /* Data */,
+				2BD86921261E790400DC1A7F /* Domain */,
 				2BD86824261E4EDB00DC1A7F /* ModularArchitectureExample */,
 				2BD86823261E4EDB00DC1A7F /* Products */,
 				7199207CA7D2D8276BA01885 /* Pods */,
@@ -95,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				2BD86822261E4EDB00DC1A7F /* ModularArchitectureExample.app */,
-				2BD86868261E50E200DC1A7F /* Domain.framework */,
+				2BD86920261E790400DC1A7F /* Domain.framework */,
+				2BD8692F261E791500DC1A7F /* Data.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,13 +100,22 @@
 			path = ModularArchitectureExample;
 			sourceTree = "<group>";
 		};
-		2BD86869261E50E200DC1A7F /* Domain */ = {
+		2BD86921261E790400DC1A7F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				2BD8686A261E50E200DC1A7F /* Domain.h */,
-				2BD8686B261E50E200DC1A7F /* Info.plist */,
+				2BD86922261E790400DC1A7F /* Domain.h */,
+				2BD86923261E790400DC1A7F /* Info.plist */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		2BD86930261E791500DC1A7F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2BD86931261E791500DC1A7F /* Data.h */,
+				2BD86932261E791500DC1A7F /* Info.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		7199207CA7D2D8276BA01885 /* Pods */ = {
@@ -143,11 +138,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2BD86863261E50E200DC1A7F /* Headers */ = {
+		2BD8691B261E790400DC1A7F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD8686C261E50E200DC1A7F /* Domain.h in Headers */,
+				2BD86924261E790400DC1A7F /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD8692A261E791500DC1A7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD86933261E791500DC1A7F /* Data.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,26 +166,24 @@
 				2BD8681F261E4EDB00DC1A7F /* Frameworks */,
 				2BD86820261E4EDB00DC1A7F /* Resources */,
 				2A883B88D272B3527A23D99A /* [CP] Embed Pods Frameworks */,
-				2BD86871261E50E200DC1A7F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2BD8686E261E50E200DC1A7F /* PBXTargetDependency */,
 			);
 			name = ModularArchitectureExample;
 			productName = ModularArchitectureExample;
 			productReference = 2BD86822261E4EDB00DC1A7F /* ModularArchitectureExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2BD86867261E50E200DC1A7F /* Domain */ = {
+		2BD8691F261E790400DC1A7F /* Domain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BD86874261E50E200DC1A7F /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildConfigurationList = 2BD86925261E790400DC1A7F /* Build configuration list for PBXNativeTarget "Domain" */;
 			buildPhases = (
-				2BD86863261E50E200DC1A7F /* Headers */,
-				2BD86864261E50E200DC1A7F /* Sources */,
-				2BD86865261E50E200DC1A7F /* Frameworks */,
-				2BD86866261E50E200DC1A7F /* Resources */,
+				2BD8691B261E790400DC1A7F /* Headers */,
+				2BD8691C261E790400DC1A7F /* Sources */,
+				2BD8691D261E790400DC1A7F /* Frameworks */,
+				2BD8691E261E790400DC1A7F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -190,7 +191,25 @@
 			);
 			name = Domain;
 			productName = Domain;
-			productReference = 2BD86868261E50E200DC1A7F /* Domain.framework */;
+			productReference = 2BD86920261E790400DC1A7F /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2BD8692E261E791500DC1A7F /* Data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BD86934261E791500DC1A7F /* Build configuration list for PBXNativeTarget "Data" */;
+			buildPhases = (
+				2BD8692A261E791500DC1A7F /* Headers */,
+				2BD8692B261E791500DC1A7F /* Sources */,
+				2BD8692C261E791500DC1A7F /* Frameworks */,
+				2BD8692D261E791500DC1A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Data;
+			productName = Data;
+			productReference = 2BD8692F261E791500DC1A7F /* Data.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +224,10 @@
 					2BD86821261E4EDB00DC1A7F = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					2BD86867261E50E200DC1A7F = {
+					2BD8691F261E790400DC1A7F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					2BD8692E261E791500DC1A7F = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -224,7 +246,8 @@
 			projectRoot = "";
 			targets = (
 				2BD86821261E4EDB00DC1A7F /* ModularArchitectureExample */,
-				2BD86867261E50E200DC1A7F /* Domain */,
+				2BD8691F261E790400DC1A7F /* Domain */,
+				2BD8692E261E791500DC1A7F /* Data */,
 			);
 		};
 /* End PBXProject section */
@@ -240,7 +263,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BD86866261E50E200DC1A7F /* Resources */ = {
+		2BD8691E261E790400DC1A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD8692D261E791500DC1A7F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,7 +332,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BD86864261E50E200DC1A7F /* Sources */ = {
+		2BD8691C261E790400DC1A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD8692B261E791500DC1A7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,14 +347,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2BD8686E261E50E200DC1A7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2BD86867261E50E200DC1A7F /* Domain */;
-			targetProxy = 2BD8686D261E50E200DC1A7F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2BD8682B261E4EDB00DC1A7F /* Main.storyboard */ = {
@@ -493,10 +522,11 @@
 			};
 			name = Release;
 		};
-		2BD86872261E50E200DC1A7F /* Debug */ = {
+		2BD86926261E790400DC1A7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -506,23 +536,25 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.example.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		2BD86873261E50E200DC1A7F /* Release */ = {
+		2BD86927261E790400DC1A7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -532,14 +564,71 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.example.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2BD86935261E791500DC1A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Data/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.example.Data;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BD86936261E791500DC1A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Data/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.example.Data;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -566,11 +655,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BD86874261E50E200DC1A7F /* Build configuration list for PBXNativeTarget "Domain" */ = {
+		2BD86925261E790400DC1A7F /* Build configuration list for PBXNativeTarget "Domain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BD86872261E50E200DC1A7F /* Debug */,
-				2BD86873261E50E200DC1A7F /* Release */,
+				2BD86926261E790400DC1A7F /* Debug */,
+				2BD86927261E790400DC1A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BD86934261E791500DC1A7F /* Build configuration list for PBXNativeTarget "Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BD86935261E791500DC1A7F /* Debug */,
+				2BD86936261E791500DC1A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
