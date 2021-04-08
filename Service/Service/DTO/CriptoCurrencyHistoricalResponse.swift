@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Core
 
 public struct CriptoCurrencyHistoricalResponse: Decodable {
     public let bpi: [Date: Double]

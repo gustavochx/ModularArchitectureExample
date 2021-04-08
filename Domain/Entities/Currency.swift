@@ -1,13 +1,13 @@
 //
-//  CurrencyEnum.swift
-//  Service
+//  Currency.swift
+//  Domain
 //
-//  Created by Gustavo Henrique Frota Soares on 07/04/21.
+//  Created by Gustavo Henrique Frota Soares on 08/04/21.
 //
 
 import Foundation
 
-public enum CurrencyResponse: String, Decodable {
+public enum Currency: String {
     case cad = "CAD"
     case hkd = "HKD"
     case isk = "ISK"

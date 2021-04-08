@@ -8,9 +8,9 @@
 import Foundation
 
 public struct CurrencieResponse: Decodable {
-    public let rates: [CurrencyEnum: Double]
+    public let rates: [CurrencyResponse: Double]
 
-    public init(rates: [CurrencyEnum: Double]) {
+    public init(rates: [CurrencyResponse: Double]) {
         self.rates = rates
     }
 
@@ -21,9 +21,9 @@ public struct CurrencieResponse: Decodable {
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         let rates = try values.decode([String: Double].self, forKey: .rates)
-        var convertedRates: [CurrencyEnum: Double] = [:]
+        var convertedRates: [CurrencyResponse: Double] = [:]
         for (key, value) in rates {
-            guard let currency = CurrencyEnum(rawValue: key) else {
+            guard let currency = CurrencyResponse(rawValue: key) else {
                 break
             }
             convertedRates[currency] = value
