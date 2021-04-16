@@ -6,29 +6,29 @@
 //
 
 import UIKit
+import Core
 
 public final class LoaderView: UIView, ViewConfigureProtocol {
-
-    //MARK: - Components
-    public lazy var activityIndicator: UIActivityIndicatorView = {
+    // MARK: - Visual Components
+    private lazy var activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: .large)
-
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicator.color = UIColor.quaternarySystemFill
+        activityIndicator.color = UIColor.gray
         activityIndicator.startAnimating()
-
         return activityIndicator
     }()
 
-    //MARK: - Lifecycle
+    // MARK: - Life Cycle
     @available(*, unavailable)
-    public required init?(coder: NSCoder) {
-        fatalError("init(coder:) not implemented")
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
-    public override init(frame: CGRect) {
+    private override init(frame: CGRect) {
         super.init(frame: frame)
+        configureViewHierarchy()
         configureConstraints()
+        configureView()
     }
 
     public func configureViewHierarchy() {
@@ -38,17 +38,17 @@ public final class LoaderView: UIView, ViewConfigureProtocol {
     public func configureConstraints() {
         NSLayoutConstraint.activate([
             activityIndicator.heightAnchor.constraint(equalToConstant: 30),
-            activityIndicator.heightAnchor.constraint(equalToConstant: 30),
+            activityIndicator.widthAnchor.constraint(equalToConstant: 30),
             activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor),
             activityIndicator.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 
     public func configureView() {
-        self.backgroundColor = .secondarySystemBackground
+        backgroundColor = UIColor.secondary
     }
 
-    //MARK: - Presentation
+    // MARK: - Presentation
     public static func show(on view: UIView, animated: Bool) {
         let loader = LoaderView(frame: view.frame)
         loader.tag = 999
@@ -66,11 +66,11 @@ public final class LoaderView: UIView, ViewConfigureProtocol {
                 loader.removeFromSuperview()
             }
         } else {
-            view.removeFromSuperview()
+            loader.removeFromSuperview()
         }
     }
 
-    public func alphaAnimation(to finalValue: CGFloat, completion: (() -> Void)?) {
+    private func alphaAnimation(to finalValue: CGFloat, completion: (() -> Void)?) {
         UIView.animate(withDuration: 0.25) {
             self.alpha = finalValue
         }

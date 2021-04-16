@@ -65,5 +65,4 @@ extension HistoricalPresenter: HistoricalPresenting {
         viewController?.displayError(message: message)
     }
 
-
 }

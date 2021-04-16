@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1BCC13262A45C7008A46A2 /* DetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BCC12262A45C7008A46A2 /* DetailFactory.swift */; };
 		2B4C3235262A3939004E0E5A /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4C3234262A3939004E0E5A /* Components.framework */; };
 		2B4C3236262A3939004E0E5A /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4C3234262A3939004E0E5A /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B4C323A262A393E004E0E5A /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4C3239262A393E004E0E5A /* Core.framework */; };
@@ -78,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B1BCC12262A45C7008A46A2 /* DetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFactory.swift; sourceTree = "<group>"; };
 		2B4C3234262A3939004E0E5A /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4C3239262A393E004E0E5A /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD86822261E4EDB00DC1A7F /* ModularArchitectureExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularArchitectureExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +240,7 @@
 		2BE88E8B262A25A2007060E6 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				2B1BCC12262A45C7008A46A2 /* DetailFactory.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE88E8E262A25CE007060E6 /* HistoricalFactory.swift in Sources */,
+				2B1BCC13262A45C7008A46A2 /* DetailFactory.swift in Sources */,
 				2BD8682A261E4EDB00DC1A7F /* ViewController.swift in Sources */,
 				2BE88E9E262A2977007060E6 /* HistoricalInteractor.swift in Sources */,
 				2BE88E92262A26A6007060E6 /* HistoricalRouter.swift in Sources */,
