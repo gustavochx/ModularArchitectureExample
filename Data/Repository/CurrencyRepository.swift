@@ -9,32 +9,30 @@ import Foundation
 import Service
 import Domain
 
-
-protocol CurrencyRepositoring {
-    func didFetchList()
-    func didFetchCurrency()
+public protocol CurrencyRepositoring: AnyObject {
+    func fetchList(completionHandler: @escaping (Result<Bool, RequestError>) -> Void)
+    func fetchCurrency(completionHandler: @escaping (Result<Bool, RequestError>) -> Void)
 }
 
-final class CurrencyRepository {
+public final class CurrencyRepository {
 
     private let dataSource: CurrencyDataSource
 
     //MARK: - Life cycle
-    init(dataSource: CurrencyDataSource) {
+    public init(dataSource: CurrencyDataSource) {
         self.dataSource = dataSource
-        self.dataSource.sourcing = self
     }
-
 }
 
 extension CurrencyRepository: CurrencyRepositoring {
 
-    func didFetchList() {
 
+    public func fetchList(completionHandler: @escaping (Result<Bool, RequestError>) -> Void) {
+        completionHandler(.success(true))
     }
 
-    func didFetchCurrency() {
-
+    public func fetchCurrency(completionHandler: @escaping (Result<Bool, RequestError>) -> Void) {
+        completionHandler(.success(true))
     }
 
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4C3233262A36D7004E0E5A /* CurrencyRateContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C3232262A36D7004E0E5A /* CurrencyRateContext.swift */; };
 		2BD8684C261E4F3800DC1A7F /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD8684A261E4F3800DC1A7F /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BD8687F261E555F00DC1A7F /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8687E261E555F00DC1A7F /* HttpRequest.swift */; };
 		2BD86882261E55B600DC1A7F /* HttpRequestSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86881261E55B600DC1A7F /* HttpRequestSetup.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B4C3232262A36D7004E0E5A /* CurrencyRateContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateContext.swift; sourceTree = "<group>"; };
 		2BD86847261E4F3800DC1A7F /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD8684A261E4F3800DC1A7F /* Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
 		2BD8684B261E4F3800DC1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2B4C3231262A36C0004E0E5A /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				2B4C3232262A36D7004E0E5A /* CurrencyRateContext.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
 		2BD8683D261E4F3800DC1A7F = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		2BD86849261E4F3800DC1A7F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2B4C3231262A36C0004E0E5A /* Context */,
 				2BD8688B261E5C3A00DC1A7F /* DTO */,
 				2BD86862261E50A700DC1A7F /* Connection */,
 				2BD8684A261E4F3800DC1A7F /* Service.h */,
@@ -239,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4C3233262A36D7004E0E5A /* CurrencyRateContext.swift in Sources */,
 				2BD8687F261E555F00DC1A7F /* HttpRequest.swift in Sources */,
 				2BD8688D261E5C6500DC1A7F /* CurrencyEnum.swift in Sources */,
 				2BD86893261E5CC400DC1A7F /* CriptoCurrencyHistoricalResponse.swift in Sources */,

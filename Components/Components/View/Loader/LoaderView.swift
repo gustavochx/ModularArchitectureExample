@@ -10,7 +10,7 @@ import UIKit
 public final class LoaderView: UIView, ViewConfigureProtocol {
 
     //MARK: - Components
-    private lazy var activityIndicator: UIActivityIndicatorView = {
+    public lazy var activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: .large)
 
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
@@ -26,16 +26,16 @@ public final class LoaderView: UIView, ViewConfigureProtocol {
         fatalError("init(coder:) not implemented")
     }
 
-    private override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         configureConstraints()
     }
 
-    func configViewHierarchy() {
+    public func configureViewHierarchy() {
         addSubview(activityIndicator)
     }
 
-    func configureConstraints() {
+    public func configureConstraints() {
         NSLayoutConstraint.activate([
             activityIndicator.heightAnchor.constraint(equalToConstant: 30),
             activityIndicator.heightAnchor.constraint(equalToConstant: 30),
@@ -44,7 +44,7 @@ public final class LoaderView: UIView, ViewConfigureProtocol {
         ])
     }
 
-    func configureView() {
+    public func configureView() {
         self.backgroundColor = .secondarySystemBackground
     }
 
@@ -70,7 +70,7 @@ public final class LoaderView: UIView, ViewConfigureProtocol {
         }
     }
 
-    private func alphaAnimation(to finalValue: CGFloat, completion: (() -> Void)?) {
+    public func alphaAnimation(to finalValue: CGFloat, completion: (() -> Void)?) {
         UIView.animate(withDuration: 0.25) {
             self.alpha = finalValue
         }

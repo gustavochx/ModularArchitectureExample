@@ -14,20 +14,26 @@ public final class NetworkCurrencyDataSource {
     private let request: HttpRequesting
 
     //MARK: - Life cycle
-    init(queue: DispatchQueue, request: HttpRequesting) {
+    public init(queue: DispatchQueue = DispatchQueue.main, requester: HttpRequesting) {
         self.queue = queue
-        self.request = request
+        self.request = requester
     }
 }
 
 extension NetworkCurrencyDataSource: CurrencyDataSource {
 
-    func list() {
-
+    public func list(base: CurrencyResponse, completionHandler: @escaping (Result<Bool, RequestError>) -> Void) {
+        request.request(with: CurrencyRateContext.rate(base)) { [weak self] result in
+            self?.queue.async {
+                completionHandler(result)
+            }
+        }
     }
 
-    func currency() {
-
+    public func currency(completionHandler: @escaping (Result<Void, RequestError>) -> Void) {
+        self.queue.async {
+            completionHandler(.success(()))
+        }
     }
 
 }

@@ -8,10 +8,10 @@
 import Foundation
 
 
-extension String {
+public extension String {
     /// Convert a String to a Date.
     /// - Parameter format: The date format of the string.
-    public func toDate(format: String) -> Date? {
+    func toDate(format: String) -> Date? {
         let formatter = DateFormatter()
         formatter.dateFormat = format
         formatter.locale = Locale(identifier: "en_US_POSIX")

@@ -8,12 +8,10 @@
 import Foundation
 import Service
 
-protocol CurrencyDataSource {
 
-    func list()
-    func currency()
-
-    weak var sourcing: CurrencyRepositoring? { set }
+public protocol CurrencyDataSource {
+    func list(base: CurrencyResponse, completionHandler: @escaping (Result<Bool, RequestError>) -> Void)
+    func currency(completionHandler: @escaping (Result<Void, RequestError>) -> Void)
 }
 
 

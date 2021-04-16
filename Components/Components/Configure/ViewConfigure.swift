@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol ViewConfigureProtocol {
+public protocol ViewConfigureProtocol {
 
     func configureViewHierarchy()
     func configureConstraints()

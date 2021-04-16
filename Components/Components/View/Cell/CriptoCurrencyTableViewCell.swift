@@ -7,11 +7,10 @@
 
 import UIKit
 
-
-public final class CryptoCurrencyTableViewCell: UITableViewCell, ViewConfigureProtocol {
+public final class CriptoCurrencyTableViewCell: UITableViewCell, ViewConfigureProtocol {
 
     //MARK: - Visual Components
-    private (set) lazy var titleLabel: UILabel = {
+    public lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
@@ -20,7 +19,7 @@ public final class CryptoCurrencyTableViewCell: UITableViewCell, ViewConfigurePr
         return label
     }()
 
-    private (set) lazy var rateLabel: UILabel = {
+    public lazy var rateLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 24)
@@ -28,7 +27,7 @@ public final class CryptoCurrencyTableViewCell: UITableViewCell, ViewConfigurePr
         return label
     }()
 
-    private (set) lazy var lineView: UIView = {
+    public lazy var lineView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .secondarySystemBackground
@@ -48,13 +47,13 @@ public final class CryptoCurrencyTableViewCell: UITableViewCell, ViewConfigurePr
         configureView()
     }
 
-    func configureView() {
+    public func configureView() {
         contentView.addSubview(titleLabel)
         contentView.addSubview(rateLabel)
         contentView.addSubview(lineView)
     }
 
-    func configureConstraints() {
+    public func configureConstraints() {
         NSLayoutConstraint.activate([
             titleLabel.heightAnchor.constraint(equalToConstant: 25),
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Spacing.space03),
@@ -76,7 +75,7 @@ public final class CryptoCurrencyTableViewCell: UITableViewCell, ViewConfigurePr
         ])
     }
 
-    func configureViewHierarchy() {
+    public func configureViewHierarchy() {
         backgroundColor = .lightGray
     }
 }

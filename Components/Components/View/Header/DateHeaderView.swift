@@ -8,10 +8,10 @@
 import UIKit
 
 
-final class DateHeaderView: UIView, ViewConfigureProtocol {
+public final class DateHeaderView: UIView, ViewConfigureProtocol {
 
     //MARK: - Components
-    private(set) lazy var titleLabel: UILabel = {
+    public lazy var titleLabel: UILabel = {
 
         var titleLabel = UILabel()
 
@@ -30,18 +30,18 @@ final class DateHeaderView: UIView, ViewConfigureProtocol {
     }
 
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         configureViewHierarchy()
         configureConstraints()
         configureView()
     }
 
-    func configureViewHierarchy() {
+    public func configureViewHierarchy() {
         addSubview(titleLabel)
     }
 
-    func configureConstraints() {
+    public func configureConstraints() {
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: Spacing.space01),
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Spacing.space01),
@@ -49,7 +49,7 @@ final class DateHeaderView: UIView, ViewConfigureProtocol {
         ])
     }
 
-    func configureView() {
+    public func configureView() {
         backgroundColor = UIColor.quaternarySystemFill
     }
 

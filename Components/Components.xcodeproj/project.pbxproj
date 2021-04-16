@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1BCC0D262A3EDB008A46A2 /* CriptoCurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BCC0C262A3EDB008A46A2 /* CriptoCurrencyTableViewCell.swift */; };
 		2BD868E7261E62B500DC1A7F /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD868E5261E62B500DC1A7F /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BDAA472262626EF00C49831 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAA471262626EF00C49831 /* LoaderView.swift */; };
 		2BDAA47626262D4D00C49831 /* DateHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAA47526262D4D00C49831 /* DateHeaderView.swift */; };
 		2BDAA47A2626329900C49831 /* ViewConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAA4792626329900C49831 /* ViewConfigure.swift */; };
 		2BDAA47F262633CC00C49831 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAA47E262633CC00C49831 /* Spacing.swift */; };
-		2BDAA48426263C5900C49831 /* CryptoCurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAA48326263C5900C49831 /* CryptoCurrencyTableViewCell.swift */; };
 		7D217262DE1A2EC602CC3F71 /* Pods_Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A0E8256EA56E7B554DBF91 /* Pods_Components.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1BCC0C262A3EDB008A46A2 /* CriptoCurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		2BD868E2261E62B500DC1A7F /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD868E5261E62B500DC1A7F /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		2BD868E6261E62B500DC1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -24,7 +25,6 @@
 		2BDAA47526262D4D00C49831 /* DateHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeaderView.swift; sourceTree = "<group>"; };
 		2BDAA4792626329900C49831 /* ViewConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigure.swift; sourceTree = "<group>"; };
 		2BDAA47E262633CC00C49831 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
-		2BDAA48326263C5900C49831 /* CryptoCurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		58A0E8256EA56E7B554DBF91 /* Pods_Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		787B6B9BF06E616C8076BF58 /* Pods-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components.debug.xcconfig"; path = "Target Support Files/Pods-Components/Pods-Components.debug.xcconfig"; sourceTree = "<group>"; };
 		9A16FAAFA9CC6D1E7F7AE2DD /* Pods-Components.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components.release.xcconfig"; path = "Target Support Files/Pods-Components/Pods-Components.release.xcconfig"; sourceTree = "<group>"; };
@@ -42,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B1BCC0B262A3ECC008A46A2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2B1BCC0C262A3EDB008A46A2 /* CriptoCurrencyTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		2BD868D8261E62B500DC1A7F = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +82,7 @@
 		2BDAA46F262626D400C49831 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2BDAA4822626342900C49831 /* Cell */,
+				2B1BCC0B262A3ECC008A46A2 /* Cell */,
 				2BDAA47426262D3200C49831 /* Header */,
 				2BDAA470262626E000C49831 /* Loader */,
 			);
@@ -104,14 +112,6 @@
 				2BDAA47E262633CC00C49831 /* Spacing.swift */,
 			);
 			path = Configure;
-			sourceTree = "<group>";
-		};
-		2BDAA4822626342900C49831 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				2BDAA48326263C5900C49831 /* CryptoCurrencyTableViewCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		4D439D100BFA98E0F8467805 /* Frameworks */ = {
@@ -237,8 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1BCC0D262A3EDB008A46A2 /* CriptoCurrencyTableViewCell.swift in Sources */,
 				2BDAA472262626EF00C49831 /* LoaderView.swift in Sources */,
-				2BDAA48426263C5900C49831 /* CryptoCurrencyTableViewCell.swift in Sources */,
 				2BDAA47F262633CC00C49831 /* Spacing.swift in Sources */,
 				2BDAA47626262D4D00C49831 /* DateHeaderView.swift in Sources */,
 				2BDAA47A2626329900C49831 /* ViewConfigure.swift in Sources */,
