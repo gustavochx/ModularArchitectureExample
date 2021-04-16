@@ -23,10 +23,10 @@ public enum HttpRequestMethod: String {
 public protocol HttpRequestSetup {
     var url: String { get }
     var cachePolicy: URLRequest.CachePolicy { get }
-    var timeInterval: TimeInterval { get }
+    var timeoutInterval: TimeInterval { get }
     var httpMethod: HttpRequestMethod { get }
-    var httpHeaders: [String : String]? { get }
-    var parameters: [String : Encodable]? { get }
+    var httpHeaders: [String: String]? { get }
+    var parameters: [String: Encodable]? { get }
 }
 
 extension HttpRequestSetup {

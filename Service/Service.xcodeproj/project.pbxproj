@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4C3233262A36D7004E0E5A /* CurrencyRateContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C3232262A36D7004E0E5A /* CurrencyRateContext.swift */; };
 		2BD8684C261E4F3800DC1A7F /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD8684A261E4F3800DC1A7F /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BD8687F261E555F00DC1A7F /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8687E261E555F00DC1A7F /* HttpRequest.swift */; };
 		2BD86882261E55B600DC1A7F /* HttpRequestSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86881261E55B600DC1A7F /* HttpRequestSetup.swift */; };
@@ -15,10 +16,27 @@
 		2BD86890261E5C8600DC1A7F /* CurrenciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8688F261E5C8600DC1A7F /* CurrenciesResponse.swift */; };
 		2BD86893261E5CC400DC1A7F /* CriptoCurrencyHistoricalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86892261E5CC400DC1A7F /* CriptoCurrencyHistoricalResponse.swift */; };
 		2BD86896261E5CEA00DC1A7F /* TodayCryptoCurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86895261E5CEA00DC1A7F /* TodayCryptoCurrencyResponse.swift */; };
+		2BD86987261FAE7000DC1A7F /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD86986261FAE7000DC1A7F /* Core.framework */; };
+		2BD86988261FAE7000DC1A7F /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD86986261FAE7000DC1A7F /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFFF7B6DD93CDD74EBDF6A25 /* Pods_Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCDB59DBC3C959B5F6B2DE /* Pods_Service.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2BD86989261FAE7000DC1A7F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2BD86988261FAE7000DC1A7F /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2B4C3232262A36D7004E0E5A /* CurrencyRateContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateContext.swift; sourceTree = "<group>"; };
 		2BD86847261E4F3800DC1A7F /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD8684A261E4F3800DC1A7F /* Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
 		2BD8684B261E4F3800DC1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,6 +47,7 @@
 		2BD8688F261E5C8600DC1A7F /* CurrenciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesResponse.swift; sourceTree = "<group>"; };
 		2BD86892261E5CC400DC1A7F /* CriptoCurrencyHistoricalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriptoCurrencyHistoricalResponse.swift; sourceTree = "<group>"; };
 		2BD86895261E5CEA00DC1A7F /* TodayCryptoCurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCryptoCurrencyResponse.swift; sourceTree = "<group>"; };
+		2BD86986261FAE7000DC1A7F /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E8547FBFA219A425E09AA4 /* Pods-Service.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service.debug.xcconfig"; path = "Target Support Files/Pods-Service/Pods-Service.debug.xcconfig"; sourceTree = "<group>"; };
 		B3CCDB59DBC3C959B5F6B2DE /* Pods_Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D3D157A9B69453A20FC619 /* Pods-Service.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service.release.xcconfig"; path = "Target Support Files/Pods-Service/Pods-Service.release.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFFF7B6DD93CDD74EBDF6A25 /* Pods_Service.framework in Frameworks */,
+				2BD86987261FAE7000DC1A7F /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,9 +69,18 @@
 		096C8C23C4CA1F936477643A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BD86986261FAE7000DC1A7F /* Core.framework */,
 				B3CCDB59DBC3C959B5F6B2DE /* Pods_Service.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B4C3231262A36C0004E0E5A /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				2B4C3232262A36D7004E0E5A /* CurrencyRateContext.swift */,
+			);
+			path = Context;
 			sourceTree = "<group>";
 		};
 		2BD8683D261E4F3800DC1A7F = {
@@ -75,6 +104,7 @@
 		2BD86849261E4F3800DC1A7F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2B4C3231262A36C0004E0E5A /* Context */,
 				2BD8688B261E5C3A00DC1A7F /* DTO */,
 				2BD86862261E50A700DC1A7F /* Connection */,
 				2BD8684A261E4F3800DC1A7F /* Service.h */,
@@ -137,6 +167,7 @@
 				2BD86843261E4F3800DC1A7F /* Sources */,
 				2BD86844261E4F3800DC1A7F /* Frameworks */,
 				2BD86845261E4F3800DC1A7F /* Resources */,
+				2BD86989261FAE7000DC1A7F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4C3233262A36D7004E0E5A /* CurrencyRateContext.swift in Sources */,
 				2BD8687F261E555F00DC1A7F /* HttpRequest.swift in Sources */,
 				2BD8688D261E5C6500DC1A7F /* CurrencyEnum.swift in Sources */,
 				2BD86893261E5CC400DC1A7F /* CriptoCurrencyHistoricalResponse.swift in Sources */,

@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4C323F262A3A63004E0E5A /* Double+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C323E262A3A63004E0E5A /* Double+Util.swift */; };
+		2B4C3242262A3A76004E0E5A /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C3241262A3A76004E0E5A /* UIView+Util.swift */; };
+		2B4C3245262A3B0E004E0E5A /* Color+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C3244262A3B0E004E0E5A /* Color+Util.swift */; };
+		2B4C3249262A3B63004E0E5A /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4C3248262A3B63004E0E5A /* Color.xcassets */; };
 		2BD868A7261E5D2D00DC1A7F /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD868A5261E5D2D00DC1A7F /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BD86981261FAE1300DC1A7F /* Date+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86980261FAE1300DC1A7F /* Date+Util.swift */; };
+		2BD86984261FAE4300DC1A7F /* String+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD86983261FAE4300DC1A7F /* String+Util.swift */; };
 		9C3A5F32F10A7E6B23960362 /* Pods_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998EC4482B3CC5AE8FA3D293 /* Pods_Core.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B4C323E262A3A63004E0E5A /* Double+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Util.swift"; sourceTree = "<group>"; };
+		2B4C3241262A3A76004E0E5A /* UIView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Util.swift"; sourceTree = "<group>"; };
+		2B4C3244262A3B0E004E0E5A /* Color+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Util.swift"; sourceTree = "<group>"; };
+		2B4C3248262A3B63004E0E5A /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		2BD868A2261E5D2D00DC1A7F /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD868A5261E5D2D00DC1A7F /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		2BD868A6261E5D2D00DC1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BD86980261FAE1300DC1A7F /* Date+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Util.swift"; sourceTree = "<group>"; };
+		2BD86983261FAE4300DC1A7F /* String+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Util.swift"; sourceTree = "<group>"; };
 		4493892EE654C8B2CAFBACA7 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		92533F62E60FD339C4BBE916 /* Pods-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.debug.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.debug.xcconfig"; sourceTree = "<group>"; };
 		998EC4482B3CC5AE8FA3D293 /* Pods_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B4C3247262A3B52004E0E5A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2B4C3248262A3B63004E0E5A /* Color.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		2BD86898261E5D2D00DC1A7F = {
 			isa = PBXGroup;
 			children = (
@@ -53,10 +73,24 @@
 		2BD868A4261E5D2D00DC1A7F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2B4C3247262A3B52004E0E5A /* Assets */,
+				2BD8697F261FADFF00DC1A7F /* Extension */,
 				2BD868A5261E5D2D00DC1A7F /* Core.h */,
 				2BD868A6261E5D2D00DC1A7F /* Info.plist */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		2BD8697F261FADFF00DC1A7F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2BD86980261FAE1300DC1A7F /* Date+Util.swift */,
+				2BD86983261FAE4300DC1A7F /* String+Util.swift */,
+				2B4C323E262A3A63004E0E5A /* Double+Util.swift */,
+				2B4C3241262A3A76004E0E5A /* UIView+Util.swift */,
+				2B4C3244262A3B0E004E0E5A /* Color+Util.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		D6133AA2B09E5DE3C4C70C05 /* Pods */ = {
@@ -120,6 +154,7 @@
 				TargetAttributes = {
 					2BD868A1261E5D2D00DC1A7F = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -146,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4C3249262A3B63004E0E5A /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4C323F262A3A63004E0E5A /* Double+Util.swift in Sources */,
+				2BD86984261FAE4300DC1A7F /* String+Util.swift in Sources */,
+				2B4C3242262A3A76004E0E5A /* UIView+Util.swift in Sources */,
+				2B4C3245262A3B0E004E0E5A /* Color+Util.swift in Sources */,
+				2BD86981261FAE1300DC1A7F /* Date+Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92533F62E60FD339C4BBE916 /* Pods-Core.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -328,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.example.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4493892EE654C8B2CAFBACA7 /* Pods-Core.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
